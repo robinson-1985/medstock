@@ -385,6 +385,7 @@ cython_debug/
 bin/
 lib/
 lib64/
+lib64
 pyvenv.cfg
 __pycache__/
 *.pyc
