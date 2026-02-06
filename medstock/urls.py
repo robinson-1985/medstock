@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+app_name = 'medstock'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('clientes.urls')),
+    path('', include('usuarios.urls')),
     path('', include('dashboard.urls')),
     path('fornecedores/', include('fornecedores.urls')),
     path('home/', include('home.urls')),

@@ -1,8 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-
-def home(request):
-    return render(request, 'clientes/home.html')
-
-def clientes(request):
-    return render(request, 'clientes/clientes.html')
+def listar_clientes(request):
+    return HttpResponse("Clientes funcionando")
