@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="/">MedStock</a>
+    </div>
+
+    <div class="nav-right">
+        <a href="/clientes/">Clientes</a>
+        <a href="/produtos/">Produtos</a>
+        <a href="/vendas/">Vendas</a>
+
+        {% if user.is_authenticated %}
+            <span>Olá, {{ user.username }}</span>
+            <a href="/logout/">Sair</a>
+        {% else %}
+            <a href="/login/">Login</a>
+        {% endif %}
+    </div>
+</nav>

@@ -38,16 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'clientes',
-    'usuarios',
-    'dashboard',
-    'sobre',
-    'contato',
-    'home',
-    'fornecedores',
-    'painel_vendas',
-    'listar_clientes',
+    'apps.clientes',
+    'apps.produtos',
+    'apps.estoque',
+    'apps.fornecedores',
+    'apps.vendas',
+    'apps.usuarios',
+    'apps.core',
+    'apps.relatorios',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

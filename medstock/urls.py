@@ -16,18 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
-app_name = 'medstock'
+from django.contrib.auth import views as auth_views
+from django.views.generic import RedirectView
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
-    path('', include('clientes.urls')),
-    path('', include('usuarios.urls')),
-    path('', include('dashboard.urls')),
-    path('fornecedores/', include('fornecedores.urls')),
-    path('home/', include('home.urls')),
-    path('sobre/', include('sobre.urls')),
-    path('contato/', include('contato.urls')),
-    path('painel_vendas/', include('painel_vendas.urls')),
-    path('listar_clientes/', include('listar_clientes.urls')),
+    
+    path('clientes/', include('apps.clientes.urls')),
+    path('produtos/', include('apps.produtos.urls')),
+    path('estoque/', include('apps.estoque.urls')),
+    path('fornecedores/', include('apps.fornecedores.urls')),
+    path('vendas/', include('apps.vendas.urls')),
+    path('usuarios/', include('apps.usuarios.urls')),
+    path('relatorios/', include('apps.relatorios.urls')),
+    path('', include('apps.core.urls')),
 ]
