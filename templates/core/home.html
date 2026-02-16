@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 style="margin-bottom:25px;">Dashboard</h1>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+
+    <div class="card">
+        <h3>Produtos</h3>
+        <p>Total cadastrados</p>
+    </div>
+
+    <div class="card">
+        <h3>Clientes</h3>
+        <p>Total ativos</p>
+    </div>
+
+    <div class="card">
+        <h3>Vendas</h3>
+        <p>Hoje</p>
+    </div>
+
+</div>
+
+{% endblock %}

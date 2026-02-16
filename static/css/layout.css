@@ -1,0 +1,63 @@
+.app-layout{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#020617;
+    color:white;
+    padding:30px 22px;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.sidebar a{
+    display:block;
+    color:#94a3b8;
+    padding:12px 14px;
+    border-radius:8px;
+    margin-bottom:8px;
+    transition:0.2s;
+}
+
+.sidebar a:hover{
+    background:#0f172a;
+    color:white;
+}
+
+
+.main-area{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.topbar{
+    height:70px;
+    background:white;
+    border-bottom:1px solid #e2e8f0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    font-weight:500;
+}
+
+
+.content{
+    padding:40px;
+}
+
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}

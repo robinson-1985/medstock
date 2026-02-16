@@ -1,0 +1,13 @@
+<div class="topbar">
+
+    <div>
+        Dashboard
+    </div>
+
+    <div>
+        👤 {{ request.user.username }}
+        &nbsp;&nbsp;
+        <a href="{% url 'logout' %}">Sair</a>
+    </div>
+
+</div>
